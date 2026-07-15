@@ -1,0 +1,12 @@
+{:itonami.blueprint/id "cloud-itonami-0142"
+ :itonami.blueprint/name "Equine-Facility Operations Coordination"
+ :itonami.blueprint/isic-rev5 "0142"
+ :itonami.blueprint/domain :agriculture/equine-raising
+ :itonami.blueprint/license "AGPL-3.0-or-later"
+ :itonami.blueprint/social-impact [:animal-welfare :rural-employment :working-animal-support]
+ :itonami.blueprint/governor :equine-facility-operations-governor
+ :itonami.blueprint/robotics true
+ :itonami.blueprint/required-technologies [:robotics :identity :forms :audit-ledger]
+ :itonami.blueprint/optional-technologies [:telemetry :optimization :dmn :bpmn]
+ :itonami.blueprint/status :public-oss
+ :itonami.blueprint/maturity :implemented}
