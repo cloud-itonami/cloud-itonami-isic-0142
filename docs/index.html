@@ -2463,7 +2463,7 @@ code { font-family: var(--font-family-mono); background: var(--color-neutral-sol
         <div class="pf-pitch">
           <p>Open Occupation Blueprint for ISIC Rev. 4 0142: Raising of horses and other equines.</p>
           <p>This repository implements a forkable OSS equine-facility operations coordinator: a facility-management robot manages herd logging, veterinary appointment scheduling, and supply procurement under a governor-gated actor, so a stable/breeding operation keeps its own operational records and maintains full transparency over decisions.</p>
-          <p>Maturity: :implemented. src/equineops/ implements the EquineOpsAdvisor (equineops.advisor) and the independent Equine Facility Operations Governor (equineops.governor), composed by equineops.operation following the itonami actor pattern (ADR-2607011000): advise -&gt; govern -&gt; phase-gate -&gt; commit | escalate | hold. 31 tests / 96 assertions green (clojure -M:test).</p>
+          <p>Maturity: :implemented. src/equineops/ implements the EquineOpsAdvisor (equineops.advisor) and the independent Equine Facility Operations Governor (equineops.governor), composed by equineops.operation following the itonami actor pattern (ADR-2607011000): advise -&gt; govern -&gt; phase-gate -&gt; commit | escalate | hold. 31 tests / 96 assertions green (kbb -M:test).</p>
         </div>
       </div>
       <p class="pf-meta">Domain <code>agriculture/equine-raising</code> · Governor <code>equine-facility-operations-governor</code> · License <code>AGPL-3.0-or-later</code></p>

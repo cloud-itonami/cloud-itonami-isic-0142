@@ -13,7 +13,7 @@ maintains full transparency over decisions.
 `Equine Facility Operations Governor` (`equineops.governor`), composed by
 `equineops.operation` following the itonami actor pattern (ADR-2607011000):
 `advise -> govern -> phase-gate -> commit | escalate | hold`. 31 tests /
-96 assertions green (`clojure -M:test`).
+96 assertions green (`kbb -M:test`).
 
 `equineops.operation` is a synchronous stub of this flow (see its
 docstring) — production wiring into a `langgraph-clj` StateGraph with
@@ -115,7 +115,7 @@ Mirrors `cloud-itonami-isic-0141` (`cattleops.*`) module-for-module:
 - `equineops.governor` — `Equine Facility Operations Governor`: hard invariants + escalation gates
 - `equineops.phase` — 0→3 rollout phase gate
 - `equineops.operation` — composes advisor → governor → phase into one operation run
-- `equineops.sim` — demo runner (`clojure -M:run`)
+- `equineops.sim` — demo runner (`kbb -M:run`)
 
 ## Capability layer
 
@@ -133,9 +133,9 @@ See [`docs/business-model.md`](docs/business-model.md) and
 ## Testing
 
 ```bash
-clojure -M:test   # 31 tests / 96 assertions
-clojure -M:lint   # clj-kondo, 0 errors / 0 warnings
-clojure -M:run    # demo runner
+kbb -M:test   # 31 tests / 96 assertions
+kbb -M:lint   # clj-kondo, 0 errors / 0 warnings
+kbb -M:run    # demo runner
 ```
 
 ## License
