@@ -1,5 +1,5 @@
 (ns equineops.registry-test
-  (:require [clojure.test :refer [deftest is testing]]
+  (:require [kotoba.test :refer [deftest is testing]]
             [equineops.registry :as registry]))
 
 (deftest cost-exceeds-threshold-test
